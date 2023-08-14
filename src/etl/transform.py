@@ -23,10 +23,11 @@ def group_by_product_and_sum(data):
 
 
 
+
     
 if __name__ == "__main__":
     from extract import extract_data
-    
+
     filepath = "data/raw/supermarket_sales - Sheet1.csv"
     raw_data = extract_data(filepath)
 
@@ -38,3 +39,4 @@ if __name__ == "__main__":
         print(result)
     else:
         print("Ошибка извлечения данных. Невозможно продолжить трансформацию.")
+

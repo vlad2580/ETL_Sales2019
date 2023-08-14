@@ -11,4 +11,4 @@ def extract_data(filepath):
 if __name__ == "__main__":
     filepath = "data/raw/supermarket_sales - Sheet1.csv"  # замените на ваш путь к файлу
     extracted_data = extract_data(filepath)
-    print(extracted_data.head())  # Выводим первые 5 строк для проверки
+    print(extracted_data)  # Выводим первые 5 строк для проверки

@@ -6,9 +6,10 @@ def extract_data(filepath):
         print("Data has been extracted")
         return data
     except Exception as e:
-        print(f"Got mistake while extracting data")
+        print(f"Got mistake while extracting data: {e}")
+        return None
 
 if __name__ == "__main__":
-    filepath = "data/raw/supermarket_sales - Sheet1.csv"  # замените на ваш путь к файлу
+    filepath = "data/raw/supermarket_sales - Sheet1.csv" 
     extracted_data = extract_data(filepath)
-    print(extracted_data)  # Выводим первые 5 строк для проверки
+    print(extracted_data)

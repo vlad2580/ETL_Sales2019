@@ -2,19 +2,19 @@ import pandas as pd
 
 def remove_duplicates(data):
     """
-    Удаляет дубликаты из DataFrame.
+    Removes duplicates from DataFrame.
 
-    Аргументы:
-    - data (DataFrame): исходные данные.
+    Arguments:
+    - data (DataFrame): original data.
 
-    Возвращает:
-    - DataFrame: данные без дубликатов.
+    Returns:
+    - DataFrame: data without duplicates.
     """
     initial_length = len(data)
     data_without_duplicates = data.drop_duplicates()
     final_length = len(data_without_duplicates)
     
-    print(f"Удалено {initial_length - final_length} дубликатов.")
+    print(f"Delited {initial_length - final_length} duplicates.")
     
     return data_without_duplicates
 

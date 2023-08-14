@@ -1,13 +1,13 @@
 import pandas as pd
 
 def save_to_csv(data, filepath):
-   """
+    """
     Saving data to a CSV file.
 
     Arguments:
     - data (DataFrame): dataframe with data to be saved.
     - filepath (str): path to the file where the data will be saved.
-   """
+    """
     data.to_csv(filepath, index=False)
 
 if __name__ == "__main__":
